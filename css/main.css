@@ -1,0 +1,347 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body > section {
+  clear: both;
+  padding: 50px 0;
+}
+
+.navbar-default{
+  box-shadow: none;
+  background-color: transparent;
+  border: none;
+  min-height: 90px;
+  padding-top: 20px;
+}
+.nav > li > a{
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.3em;
+  text-shadow: 1px 1px 1px #000;
+  -webkit-text-shadow: 1px 1px 1px #000;
+  -moz-text-shadow: 1px 1px 1px #000;
+}
+.nav > li > a:hover, 
+.nav > li > a:focus {
+  background-color: transparent;
+}
+
+.carousel{
+  /*background: #1e3d5a;
+  background: -moz-linear-gradient(top,  #1e3d5a 0%, #0c223b 100%);
+  background: -webkit-linear-gradient(top,  #1e3d5a 0%,#0c223b 100%);
+  background: linear-gradient(to bottom,  #1e3d5a 0%,#0c223b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3d5a', endColorstr='#0c223b',GradientType=0 );*/
+  background: #333 url(../img/batman.jpg) no-repeat;
+  background-size: cover;
+  min-height: 700px;
+  padding: 50px 0 100px;
+
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: auto;
+  margin: auto;
+}
+
+.carousel h2 {
+  font-size: 80px;
+  font-weight: bold;
+  color: #610100;
+  letter-spacing: 5px;
+}
+
+h2, h3{
+  color: #15365b;
+  margin-bottom: 30px;
+}
+h4{
+  color: #15365b;
+  text-transform: uppercase;
+}
+
+.about h3:after{
+  content: '';
+  height: 5px;
+  width: 40px;
+  background-color: #15365b;
+  display: block;
+  margin: 8px auto 0;
+}
+
+.blue-circle{
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: #15365b;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  margin: 0 auto;
+}
+.about .blue-circle{
+  width: 50%;
+  padding-bottom: 50%;
+}
+
+.features{
+  background-color: #f5f5f5;
+}
+.item-feature{
+  margin-bottom: 30px;
+}
+
+.modal-body{
+  text-align: center;
+}
+
+.parallax{
+  height: 600px;
+  background: #fff url(../img/logos.jpg) no-repeat fixed center center;
+  background-size: contain;
+}
+.parallax h2{
+  font-size: 3.6em;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0px 7px 8px #000;
+  -webkit-text-shadow: 0px 7px 8px #000;
+  -moz-text-shadow: 0px 7px 8px #000;
+}
+#download{
+  padding-bottom: 0;
+}
+#download .content-downloads{
+  height: 700px;
+  position: relative;
+}
+.phone{
+  position: relative;
+  width: 50%;
+  float: left;
+  height: 100%;
+  box-shadow: inset -7px -7px 12px -2px rgba(0,0,0,.15);
+}
+.phone img{
+  position: absolute;
+  bottom: 20%;
+  top: 20%;
+}
+
+.downloads-empty{
+  width: 50%;
+  background-color: #f5f5f5;
+  float: right;
+  height: 100%;
+  z-index: 2;
+  background-image: url(../img/download.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+#download .download{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 50px;
+}
+#download .platforms > div{
+  border-radius: 20px;
+  border: 3px solid #15365b;
+  padding: 11px 0;
+  font-size: 1.2em;
+  position: relative;
+  padding-left: 50px;
+  color: #0c243d;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
